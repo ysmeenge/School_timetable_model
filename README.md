@@ -38,10 +38,11 @@ We are looking at making a school time table for one day which has 8 periods. We
 ## Modelling
 
 1. POC: one day, set of courses, teachers, classes and classrooms
+    * not all teacher can give all courses
+    * some classes need multiple hours of one cours (e.g. 1 hour of Dutch, 2 hours of Math etc)
 2. Add multiple days such that we make a full week schedule
-3. Add same course needs to be given to some classes multiple times per week (e.g. 3 hours of Dutch, 2 hours of English etc)
-4. Add not every classroom is suitable for every course (fixed rooms: music in music room, PE should be given in gym, maybe also add preferred rooms: english is usually given in the same room). Required classroom, preferred class room
-5. Instead of clases; add that students with different set of courses instead of full classes of students
+3. Add not every classroom is suitable for every course (fixed rooms: music in music room, PE should be given in gym, maybe also add preferred rooms: english is usually given in the same room). Required classroom, preferred class room
+4. Instead of clases; add that students with different set of courses instead of full classes of students
 
 ## Decision variables
 Note that if we know that teacher A cannot give course B then all decision variables with A and B can be set to 0.
